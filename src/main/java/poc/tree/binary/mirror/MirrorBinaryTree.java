@@ -69,13 +69,5 @@ public class MirrorBinaryTree {
             printTree(root.getLeft());
             printTree(root.getRight());
         }
-       /* if (root.getChildren() != null && root.getChildren().size() > 0) {
-            root.printChildren();
-            for (poc.tree.generic.mirror.Node child : root.getChildren()) {
-
-
-            }
-        }*/
-
     }
 }
