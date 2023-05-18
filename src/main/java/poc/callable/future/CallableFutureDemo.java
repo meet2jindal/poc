@@ -32,7 +32,7 @@ public class CallableFutureDemo {
 
         ExecutorService service = Executors.newFixedThreadPool(2);
 
-        for (int i = 0; i < 50; i++) {
+        //for (int i = 0; i < 50; i++) {
 
 
             final Future<String> futurePlaceOrder = service.submit(completableFutureDemo.placeOrderTask);
@@ -43,6 +43,6 @@ public class CallableFutureDemo {
 
             final Future<?> futureDeliverOrder = service.submit(completableFutureDemo.deliverOrderTask);
             System.out.println(futureDeliverOrder.get());
-        }
+        //}
     }
 }
